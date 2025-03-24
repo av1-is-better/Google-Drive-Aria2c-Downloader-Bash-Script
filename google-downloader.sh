@@ -65,10 +65,10 @@ file_name=$(echo "$uuid_data" | cut -d '|' -f2)
 
 # Check if UUID was found
 if [[ -z "$uuid_value" ]]; then
-    echo -e "\033[1;91mError: UUID not found in the response.\033[0m"
+    echo -e "\033[1;91m\nError: UUID not found in the response.\033[0m"
     exit 1
 fi
-echo -e "\033[1;93mDownload UUID: \033[1;95m$uuid_value\033[0m"
+echo -e "\033[1;93m\nDownload UUID: \033[1;95m$uuid_value\033[0m"
 
 # Check if filename was found
 if [[ -z "$file_name" ]]; then
